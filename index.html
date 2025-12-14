@@ -229,6 +229,17 @@
                 font-size: 16px;
             }
         }
+        #video {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #video video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+        }
     </style>
 </head>
 
@@ -264,7 +275,12 @@
     </section>
 
     <main>
-
+        <section id="video" class="card">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="smoke_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
         <!-- PROBLEM -->
         <section id="problem" class="card">
             <h2>Current Situation in Bark Beetle Monitoring</h2>
